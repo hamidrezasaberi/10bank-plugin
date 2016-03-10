@@ -1,0 +1,15 @@
+<?php 
+/**
+ * Magento
+ * @category   Payment
+ * @package    Pdt_bank10
+ * @copyright  Copyright (c) 2015 bank10
+ * @see http://bank10
+ */	
+	echo $this->getMethod()->getTitle() . '<br/>';
+	if ($this->getInfo()->getLastTransId() == '') {
+		echo '<em>' . "به درگاه پرداخت بانک ۱۰ ارجاع داده میشود" . '</em>';
+	} else {
+		echo $this->__('شماره تراکنش : %s', $this->htmlEscape($this->getInfo()->getLastTransId())) . '<br/>';
+	}
+?>

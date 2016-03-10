@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ * @category   Payment
+ * @package    Pdt_bank10
+ * @copyright  Copyright (c) 2015 10bank.ir
+ * @see http://10bank.ir
+ */
+-->
+<config>
+    <modules>
+        <Pdt_bank10>
+            <version>1.0.0</version>
+        </Pdt_bank10>
+    </modules>
+
+    <global>
+        <models>
+            <bank10>
+                <class>Pdt_bank10_Model</class>
+            </bank10>
+        </models>
+        <helpers>
+            <bank10>
+                <class>Pdt_bank10_Helper</class>
+            </bank10>
+        </helpers>
+        <resources>
+            <bank10_setup>
+                <setup>
+                    <module>Pdt_bank10</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </bank10_setup>
+            <bank10_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </bank10_write>
+            <bank10_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </bank10_read>
+        </resources>
+        <blocks>
+            <bank10><class>Pdt_bank10_Block</class></bank10>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <bank10>
+                <use>standard</use>
+                <args>
+                    <module>Pdt_bank10</module>
+                    <frontName>bank10</frontName>
+                </args>
+            </bank10>
+        </routers>
+        <translate>
+            <modules>
+                <Pdt_bank10>
+                    <files>
+                        <default>Pdt_bank10.csv</default>
+                    </files>
+                </Pdt_bank10>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <bank10>
+                    <file>bank10.xml</file>
+                </bank10>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Pdt_bank10>
+                    <files>
+                        <default>Pdt_bank10.csv</default>
+                    </files>
+                </Pdt_bank10>
+            </modules>
+        </translate>
+    </adminhtml>
+	<phoenix>
+		<bank10>
+			<verify_url>http://10bank.ir</verify_url>
+		</bank10>
+	</phoenix>
+    <default>
+        <payment>        
+            <bank10>
+                <active>0</active>
+                <model>bank10/bank10</model>
+                <order_status>1</order_status>
+                <title>درگاه پرداخت ۱۰ بانک</title>
+                <allowspecific>0</allowspecific>
+                <use_store_currency>0</use_store_currency>
+            </bank10>
+        </payment>
+    </default> 
+</config>

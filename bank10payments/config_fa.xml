@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>bank10payment</name>
+
+	<displayName><![CDATA[درگاه پرداخت bank10]]></displayName>
+	<version><![CDATA[2.0]]></version>
+	<description><![CDATA[یک ماژول رایگان برای پرداخت توسط درگاه bank10]]></description>
+	<author><![CDATA[iPresta.ir]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[آیا مطمئن هستید می خواهید جزئیات را حذف کنید ؟]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,114 @@
+body {
+  background: #F1F2F4;
+}
+section {
+  background: #FFF;
+  text-align: center;
+  max-width: 23rem;
+  margin: 3rem auto;
+  box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  padding: 1rem 2rem 2rem;
+  font-family: tahoma;
+  font-size: 12px;
+  color: #666A6F;
+  direction: rtl;
+}
+label {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+label span {
+  width: 100%;
+  display: block;
+  text-align: right;
+  color: #919191;
+  padding: 2px 0;
+}
+label input {
+  width: 100%;
+  border: 1px solid #DBDBDB;
+  font-size: 13px;
+  font-family: tahoma;
+  padding: 7px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #FDFDFD;
+  margin-top: 4px;
+}
+label input:focus {
+  outline: none;
+  border-color: #5A645F;
+}
+input[name="email"], input[name="price"], input[name="username"], input[name="password"] {
+  direction: ltr;
+}
+form.setting input {
+  direction: ltr;
+}
+button {
+  display: block;
+  margin: 2rem auto 1rem;
+  background-color: #373737;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: tahoma;
+  font-size: 14px;
+  padding: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #424242;
+}
+button:focus {
+  outline: none;
+  background-color: #222;
+}
+section.tables {
+  max-width: 50rem;
+}
+table {
+  border: none;
+  width: 100%;
+  text-align: right;
+  margin: 2rem 0 0;
+}
+th, td {
+  border: none;
+  border-bottom: 1px solid #D7D7D7;
+  padding: 1rem;
+}
+a {
+  background-color: #CBCBCB;
+  padding: .4rem .5rem;
+  border-radius: 2px;
+  color: #4F4F4F;
+  text-decoration: none;
+}
+.left {
+  text-align: left;
+}
+hr {
+  border: none;
+  margin: 2rem -2rem;
+  border-bottom: 1px dashed #CACACA;
+}
+footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+footer a {
+  background: none;
+  font-family: tahoma;
+  font-size: 12px;
+  color: #A3A3A3;
+}
+footer a:hover {
+  color: #949494;
+}

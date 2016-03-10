@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ * @category   Payment
+ * @package    Pdt_bank10
+ * @copyright  Copyright (c) 2015 10bank.ir
+ * @see http://10bank.ir
+ */
+-->
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <bank10 translate="label comment" module="payment">
+                    <label>درگاه پرداخت ۱۰ بانک</label>
+                    <comment>&lt;strong&gt;Please note&lt;/strong&gt;: All rights of this module reserve 10bank.ir &lt;a href="http://10bank.ir" target="_blank"&gt;10bank.ir&lt;/a&gt;</comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <order_status translate="label">
+                            <label>New order status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_order_status</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <sort_order translate="label">                            
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>                        
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>        
+                        <seller_id translate="label comment">
+                            <label>id درگاه</label>
+                            <comment>id درگاه را وارد کنید</comment>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>bank10/config_backend_sellerid</backend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </seller_id> 
+						<seller_api translate="label comment">
+                            <label>api درگاه</label>
+                            <comment>api درگاه را وارد کنید</comment>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>bank10/config_backend_sellerapi</backend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </seller_api>                        
+                    </fields>
+                </bank10>
+            </groups>
+        </payment>
+    </sections>
+</config>

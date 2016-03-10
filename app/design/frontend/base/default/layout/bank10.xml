@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ * @category   Payment
+ * @package    Pdt_bank10
+ * @copyright  Copyright (c) 2015 10bank.ir
+ * @see http://10bank.ir
+ */
+-->
+<layout version="0.1.0">
+<bank10_processing_failure>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="bank10/failure" name="bank10_failure" template="bank10/failure.phtml">
+        </block>
+    </reference>
+</bank10_processing_failure>
+<bank10_processing_redirect>
+    <reference name="root">
+        <action method="setTemplate"><template>bank10/blank.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="bank10/redirect" name="bank10_redirect" template="bank10/redirect.phtml" />
+    </reference>
+</bank10_processing_redirect>
+</layout>
